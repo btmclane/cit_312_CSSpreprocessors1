@@ -1,0 +1,91 @@
+@variableBackground-color: lightgrey;
+@mainFormat: center;
+@navBackgroundColor: goldenrod;
+@footerBackgroundColor: white;
+@boxSize: 100px;
+@boxRed: red;
+@boxBlue: blue;
+@boxGreen: green;
+@boxpurple: purple;
+@margin: 180px;
+@padding: 50px;
+@font-size: 20px;
+
+nav {
+    text-align: @mainFormat;
+    background-color: @navBackgroundColor;
+    z-index: 999;
+    height: @boxSize * 0.5;
+    width: 100%;
+    font-size: @font-size;
+    padding-top: 30px;
+}
+
+footer {
+    text-align: @mainFormat;
+    background-color: @footerBackgroundColor;
+    width: 100%;
+    height: @boxSize * 0.5;
+    font-size: @font-size;
+    padding-top: 30px;
+}
+
+* {
+    background-color: @variableBackground-color;
+}
+
+.boxes {
+    display: flex ;
+    padding-left: auto;
+    align-items: center;
+    padding-top: @padding;
+    padding-bottom: @padding;
+}
+
+.box1 {
+    background-color: @boxRed;
+    height: @boxSize;
+    width: @boxSize;
+    flex: 0 0 @boxSize;
+    padding: 0px;
+    margin-left: @margin;
+    border-radius: @boxSize * 0.1;
+    box-shadow: (@boxSize * 0.02) (@boxSize * 0.02);
+}
+
+.box2 {
+    background-color: @boxBlue;
+    height: @boxSize * 2;
+    width: @boxSize * 2;
+    flex: 0 0 @boxSize * 2;
+    padding: 0px;
+    margin-left: @margin;
+    border-radius: @boxSize * 0.1;
+    box-shadow: (@boxSize * 0.02) (@boxSize * 0.02);
+}
+
+.box3 {
+    background-color: @boxGreen;
+    height: @boxSize * 2.5;
+    width: @boxSize * 2.5;
+    flex: 0 0 @boxSize * 2.5;
+    padding: 0px;
+    margin-left: @margin;
+    border-radius: @boxSize * 0.1;
+    box-shadow: (@boxSize * 0.02) (@boxSize * 0.02);
+}
+
+.box4 {
+    background-color: @boxpurple;
+    height: @boxSize * 0.5;
+    width: @boxSize * 0.5;
+    flex: 0 0 @boxSize * 0.5;
+    padding: 0px;
+    margin-left: @margin;
+    border-radius: @boxSize * 0.1;
+    box-shadow: (@boxSize * 0.02) (@boxSize * 0.02);
+}
+
+
+
+  
